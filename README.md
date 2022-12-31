@@ -22,6 +22,8 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 - Setup Resources in Azure
 - Ensure Connectivity between the Client-1 and Domain Controller
 - Install Active Directory
+- Create an Admin and Normal User Account in AD
+- Setup Remote Desktop for non-administrative users on Client-1
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -61,6 +63,34 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 9. Promote as a DC: Setup a new forest as mydomain.com (for example).
 <br>
 10. Restart and then log back into DC-1 as user: mydomain.com\labuser.
-<p>
+</p>
+<br />
 
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+11. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”.
+<br>
+12. Create a new OU named “_ADMINS”.
+<br>
+13. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”.
+<br>
+14. Add jane_admin to the “Domain Admins” Security Group.
+
+<p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+15. Log into Client-1 as mydomain.com\jane_admin and open system properties.
+<br>
+16. Allow “domain users” access to remote desktop.
+<br>
+17. You can now log into Client-1 as a normal, non-administrative user now.
+
+
+<p>
 <br />
