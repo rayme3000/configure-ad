@@ -1,8 +1,6 @@
-<p align="center">
-<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
-</p>
 
-<h1>Active Directory Deployed in the Cloud (Azure)</h1>
+![AD Header](https://user-images.githubusercontent.com/59034949/210696156-5d02df48-5b03-407f-9c6e-10772716a4cb.jpg)
+
 This tutorial outlines the implementation of Active Directory within Azure Virtual Machines.<br />
 
 <h2>Environments and Technologies Used</h2>
