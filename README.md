@@ -25,9 +25,10 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 
 <h2>Deployment and Configuration Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+![ad 1](https://user-images.githubusercontent.com/59034949/211207607-39de4690-418e-4ee2-9e85-1e8855a0f6c2.png)
+
+
 <p>
 1. Create the Domain Controller VM (Windows Server 2022) named “DC-1”.
   <br>
@@ -40,9 +41,10 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+![ad 2 5](https://user-images.githubusercontent.com/59034949/211208114-1fc049bf-f342-42a9-8d2f-35504f847c20.png)
+
+
 <p>
 5. Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping).
 <br>
@@ -52,9 +54,10 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+![ad](https://user-images.githubusercontent.com/59034949/211208145-0b64ec04-8859-46f0-8ef2-a0e658fe8d72.png)
+
+
 <p>
 8. Login to DC-1 and install Active Directory Domain Services.
 <br>
@@ -64,26 +67,27 @@ This tutorial outlines the implementation of Active Directory within Azure Virtu
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+![ad 4](https://user-images.githubusercontent.com/59034949/211208158-24708b7c-50bb-4f6c-993c-ba361cbfc72a.png)
+
+
 <p>
 11. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”.
 <br>
 12. Create a new OU named “_ADMINS”.
 <br>
-13. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”.
+13. Create a new employee named “John Smith” (same password) with the username of “john_admin”.
 <br>
 14. Add jane_admin to the “Domain Admins” Security Group.
 
 <p>
 <br />
 
+![ad 5](https://user-images.githubusercontent.com/59034949/211208169-b990fad2-7ff7-4041-98ce-f6e2be1e06c4.png)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-15. Log into Client-1 as mydomain.com\jane_admin and open system properties.
+15. Log into Client-1 as mydomain.com\john_admin and open system properties.
 <br>
 16. Allow “domain users” access to remote desktop.
 <br>
